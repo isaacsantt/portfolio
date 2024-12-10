@@ -272,5 +272,61 @@ a:hover {
 .project-detail-container li {
     margin-bottom: 10px;
 }
-
 /* Ajustes se necessário para barras, etc. */
+/* Estilos padrão do novo header e hero, inicialmente ocultos */
+.mobile-header,
+.mobile-hero {
+    display: none;
+}
+
+/* Apenas em telas pequenas (por ex. max-width:600px) exibir o novo layout mobile */
+@media (max-width: 600px) {
+    .container {
+        display: none; /* esconde o layout antigo no mobile */
+    }
+
+    .mobile-header,
+    .mobile-hero {
+        display: block;
+        color: #EEE;
+        font-family: 'Nunito', sans-serif;
+        background: #0D0D0D;
+        padding: 20px;
+    }
+
+    .mobile-header {
+        /* Nome no topo esquerdo */
+    }
+
+    .mobile-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .mobile-hero {
+        text-align: center;
+        max-width: 300px;
+        margin: 50px auto; /* centraliza o conteúdo */
+    }
+
+    .mobile-photo {
+        width: 100px; 
+        height: 100px;
+        background: #333; /* Espaço vazio onde você adicionará a foto depois */
+        border-radius: 50%;
+        margin: 0 auto 20px auto; /* centraliza e espaçamento */
+    }
+
+    .mobile-hero h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .mobile-hero p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #AAA;
+        font-weight: 300;
+    }
+}
