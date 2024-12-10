@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>App Faculdade - Detalhes</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+  href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" 
+  rel="stylesheet"
+/>
+<!-- Font Awesome para ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-e7ZN6RZgX++7IY4rqiC/YQU2hhMGFiG7Tfl2IyO/rU5ygiUDK0dvt5ATz5CZpC4X" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container-detail">
+    <!-- Este layout é diferente, focado apenas no projeto em si -->
+    <div class="project-detail-container">
+        <!-- Link para voltar à página inicial -->
+        <div class="back-link">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+        </div>
+
+        <h1>App Faculdade</h1>
+        <p class="intro">
+            Um aplicativo de rede social acadêmica, conectando <b>alunos</b>, <b>professores</b> 
+            e <b>grupos de estudo</b> em uma única plataforma.<br><br>
+            O objetivo é facilitar o compartilhamento de materiais, eventos, avisos e promover 
+            debates construtivos no ambiente acadêmico.
+        </p>
+
+        <!-- Ícones representando tecnologias -->
+        <div class="tech-icons">
+            <div class="tech-item">
+                <i class="fab fa-android"></i>
+                <span>Android</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-code"></i>
+                <span>Kotlin/Java</span>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-figma"></i>
+                <span>Design Simples</span>
+            </div>
+        </div>
+
+        <!-- Porcentagem de conclusão (exemplo) -->
+        <h2>Status do Projeto</h2>
+        <p>Aproximadamente 30% concluído.</p>
+        <div class="progress-bar">
+            <div class="progress" style="width:30%;"></div>
+        </div>
+
+        <h2>Linguagens e Ferramentas</h2>
+        <ul>
+            <li><b>Kotlin/Java:</b> Desenvolvimento nativo para Android.</li>
+            <li><b>Possibilidade de Flutter:</b> Caso seja necessário multiplataforma no futuro.</li>
+            <li><b>Firebase:</b> Autenticação, banco de dados em tempo real e notificações push.</li>
+            <li><b>Integração com API da faculdade:</b> Para obter dados de horários, eventos e usuários cadastrados.</li>
+        </ul>
+
+        <h2>Métodos e Funcionalidades</h2>
+        <ul>
+            <li>Conexão entre estudantes, professores e grupos (tipo "feeds" de postagens).</li>
+            <li>Compartilhamento de materiais (PDFs, links, vídeos), eventos e avisos.</li>
+            <li>Notificações push para atualização de conteúdo (novos posts, eventos).</li>
+            <li>Funcionalidades offline (sincronização quando online novamente).</li>
+            <li>Controles de privacidade e permissões para grupos e turmas.</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

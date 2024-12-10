@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0D0D0D;
+    color: #EEE;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #AAA;
+}
+
+/* Estilos para a página principal (index.html) */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    min-height: 100vh;
+    /* Espaço amplo, estilo minimalista */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    padding-left: 150px;
+}
+
+.left h1 {
+    font-size: 1.8rem;
+    margin: 0 0 20px 0;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.left p {
+    margin: 0 0 60px 0;
+    max-width: 320px;
+    color: #AAA;
+    font-weight: 300;
+}
+
+.right {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 0.9rem;
+    margin: 0 0 10px 0;
+    color: #FFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        margin-top: 80px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    background: #161616;
+    border: 1px solid #1D1D1D;
+    padding: 20px;
+    transition: background 0.3s, border 0.3s, transform 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-card:hover {
+    background: #1B1B1B;
+    border-color: #2A2A2A;
+    transform: translateY(-2px);
+}
+
+.project-title {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.project-desc {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #AAA;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.details-link {
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.details-link:hover {
+    color: #BBB;
+}
+
+.contact p {
+    font-size: 0.9rem;
+    color: #AAA;
+    max-width: 400px;
+    font-weight: 300;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.icons a {
+    color: #666;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons a:hover {
+    color: #888;
+}
+
+.icon-mail::before {
+    content: "✉";
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 4px;
+}
+
+.icon-linkedin::before {
+    content: "in";
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: #2A2A2A;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin-right: 2px;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Estilos para as páginas de detalhes (app_faculdade.html e site_financas.html) */
+.container-detail {
+    min-height: 100vh;
+    background: #0D0D0D;
+    color: #EEE;
+    padding: 40px;
+}
+
+.project-detail-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.back-link a {
+    color: #888;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    color: #AAA;
+}
+
+.back-link {
+    margin-bottom: 20px;
+}
+
+.project-detail-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.project-detail-container .intro {
+    color: #AAA;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.tech-item i {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #222;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    position: relative;
+    height: 10px;
+}
+
+.progress {
+    background: #4F8A10;
+    height: 10px;
+    width: 0%;
+}
+
+.project-detail-container h2 {
+    margin: 40px 0 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.project-detail-container ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: #CCC;
+}
+
+.project-detail-container li {
+    margin-bottom: 10px;
+}
+
+/* Ajustes se necessário para barras, etc. */
