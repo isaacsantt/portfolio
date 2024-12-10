@@ -329,4 +329,62 @@ a:hover {
         color: #AAA;
         font-weight: 300;
     }
+    /* Estilos básicos para a versão mobile (Kadet style) */
+.mobile-header,
+.mobile-hero {
+    display: none; /* Esconder no desktop */
+    font-family: 'Nunito', sans-serif;
+    background: #0D0D0D;
+    color: #EEE;
+}
+
+/* Header no mobile */
+.mobile-header {
+    padding: 20px;
+}
+
+.mobile-header .mobile-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Hero no mobile */
+.mobile-hero {
+    text-align: center;
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+.mobile-hero .mobile-photo {
+    width: 100px; 
+    height: 100px;
+    background: #333; 
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.mobile-hero h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.mobile-hero p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #AAA;
+    margin: 0; /* garante proximidade ao h2 */
+}
+
+/* Media query para mobile */
+@media (max-width:600px) {
+    .container {
+        display: none; /* no mobile, esconde o layout desktop */
+    }
+
+    .mobile-header,
+    .mobile-hero {
+        display: block; /* no mobile, mostra o novo layout tipo Kadet */
+    }
 }
