@@ -13,21 +13,26 @@
 />
 </head>
 <body>
-  <header class="mobile-header">
-    <div class="mobile-title">Isaac Santt</div>
+
+<!-- Layout Mobile inspirado no Kadet - inicialmente oculto em desktop -->
+<header class="mobile-header" style="display:none;">
+    <div class="mobile-title" style="font-size:1.5rem; font-weight:600; color:#EEE; margin:20px;">
+        Isaac Santt
+    </div>
 </header>
-<section class="mobile-hero">
-    <!-- Espaço vazio para minha foto depois -->
-    <div class="mobile-photo"></div>
-    <h2>Hello, I'm Isaac Santt</h2>
-    <p>
-        Tenho <b>22 anos</b>, sou Desenvolvedor <b>Fullstack Júnior</b> com foco em criar 
-        experiências completas, do front ao back-end, valorizando simplicidade e funcionalidade. 
-        Atualmente, estou <b>planejando</b> um aplicativo para a faculdade (rede social acadêmica) 
-        e um site de finanças (exibindo dividendos, projeções, valores recebidos) que auxiliam 
-        no entendimento de investimentos.
+
+<section class="mobile-hero" style="display:none; text-align:center; color:#EEE; font-family:'Nunito', sans-serif; margin:50px auto; max-width:300px;">
+    <div class="mobile-photo" style="width:100px; height:100px; border-radius:50%; background:#333; margin:0 auto 20px;"></div>
+    <h2 style="font-size:1.4rem; font-weight:600; margin-bottom:20px;">Hello, I'm Isaac Santt</h2>
+    <p style="font-size:0.9rem; line-height:1.6; font-weight:300; color:#AAA;">
+        Tenho <b>22 anos</b>, sou Desenvolvedor <b>Fullstack Júnior</b> com foco em criar experiências completas, 
+        do front ao back-end, valorizando simplicidade e funcionalidade. Atualmente, estou <b>planejando</b> 
+        um aplicativo para a faculdade (rede social acadêmica) e um site de finanças (exibindo dividendos, projeções, 
+        valores recebidos) que auxiliam no entendimento de investimentos.
     </p>
 </section>
+
+<!-- Layout Desktop Original -->
 <div class="container">
     <div class="left">
         <h1>Hello, I'm Isaac Santt</h1>
@@ -72,6 +77,7 @@
         <div class="footer">© 2024 Isaac Santt</div>
     </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
